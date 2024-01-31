@@ -1,10 +1,13 @@
-import Header from "./components/Header.js"
-
+import Header from "./shared/components/Header"
+import "./App.css"; 
+import {BrowserRouter} from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <>
+      <BrowserRouter>
+           <Header />
+      </BrowserRouter>
+    </>
   );
 }
 

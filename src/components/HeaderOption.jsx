@@ -1,5 +1,4 @@
 import React from 'react';
-import "./HeaderOption.css"
 
 function HeaderOption(props) {
   return (

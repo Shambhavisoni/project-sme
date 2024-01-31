@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Header.css";
-import HeaderOption from "./HeaderOption.js";
+import HeaderOption from "./HeaderOption.jsx";
 import logo from "./logo.jpg"
+import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
   return (
@@ -15,6 +15,7 @@ function Header() {
             </div>
             <div className="header__right">        
                 <div className="header__search"> 
+                    <SearchIcon />
                     <input type="text" placeholder="Search"/>
                 </div>
             </div>

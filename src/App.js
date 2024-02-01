@@ -1,15 +1,22 @@
-import Header from "./components/Header.jsx"
-import Body from "./components/Body.jsx"
-import Footer from "./components/Footer.jsx"
+import Header from "./shared/components/Header"
+import "./App.css"; 
+import {BrowserRouter} from 'react-router-dom';
+import Body from "./shared/components/Body.jsx"
+import Footer from "./shared/components/Footer.jsx"
 import "./App.css"
+import Scheme from "./shared/pages/Scheme.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <>
+      <BrowserRouter>
+           <Header />
+      </BrowserRouter>
       <Body />
-      <Footer />
-    </div>
+      <BrowserRouter>
+           <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -1,46 +1,12 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
+/* HEADER */
 .header{
   position: sticky;
+  display: flex;
   top: 0;
   justify-content: space-evenly;
   z-index: 999;
@@ -51,15 +17,21 @@
   width: 100%;
   background-color: white;
 }
+a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100px;
+}
 
 .header__left{
   display: flex;
+  align-items: center;
 }
 
 .header__left > img{
   object-fit: contain;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 100px;
 }
 
 .header__search{
@@ -84,13 +56,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 30px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 5px;
   color: gray;
   cursor: pointer;
-  justify-content: space-between;
-  margin-left: 30px;
-  width: 5em;
+  padding: 10px 10px;
 }
+
 
 .headerOption:hover{
   color:white;
@@ -99,10 +72,12 @@
   border-radius: 10px;
 }
 
-.headerOption__title{
-  font-size: 15px;
+/* .headerOption__title{
+  font-size: 12px;
   font-weight: 600;
-}
+} */
+
+/* BODY */
 .body-top{
   margin-top: 40px;
   margin-left: 40px;
@@ -140,19 +115,24 @@
 
 .cards{
   margin-top: 130px;
-  display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-  justify-content: space-between;
+  display:flex;
+  /* margin-left: 100px; */
+  flex-wrap: wrap;
+  /* margin-right: 100px; */
+  justify-content:center;
 }
+
 .card{
+  /* flex: 25%; */
   border: 2px solid  rgb(45, 152, 152);
   margin: 20px 20px;
   height: 400px;
-  width: 500px;
+  /* width: 600px; */
+  width: 450px;
   padding: 0px;
+  padding-bottom: 5px;
   border-radius: 5px;
-  /* position: relative; */
+  position: relative;
 }
 
 .card:hover{
@@ -184,24 +164,61 @@
   transition: ease-in-out 0.3s;
 }
 
+
 .content > h4{
   position: relative;
   color: grey;
-  padding: 10px 10px;
+  padding: 10px;
   text-align: left;
+  margin-bottom: 4px;
+  white-space:initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.details{
-  /* position: relative; */
+.descp{
+  position: absolute;
   display: flex;
+  align-content: center;
   justify-content: space-evenly;
+  width: 450px;
+  padding-bottom: 20px;
   /* margin: 0px; */
-  bottom: 0px;
+  bottom: 0;
+}
+.detail{
+  display: flex;
+  width: 450px;
+  bottom: 70px;
+  position: absolute;
+  background-color: rgb(213, 253, 253);
+  height: 100px;
+  margin-top: 2px;
+  /* margin-bottom: 17px; */
 }
 
+.info {
+  flex: 0.5;
+  padding: 5px;
+  margin: 5px;
+}
+.info > h4{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.info > p{
+  margin: 10px 10px;
+}
 .btn{
-  position: absolute;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   /* position: inline-flex; */
-  bottom: 20px; 
+  margin-top: 15px;
+  bottom: 0;
+  /* bottom: 20px;  */
+
   padding: 10px 30px;
   background-color: rgb(45, 152, 152);
   border: none;
@@ -234,20 +251,29 @@
 
 /*FOOTER*/
 .footer{
+  /* display: flex; */
   width:100%;
-  background-image:url("./components/footer.PNG");
+  background-image:url("./shared/components/footer.PNG");
   background-size:100% 100%;
   padding:20px 0px;
   margin-top: 500px;
   }
   
+  
   .footer section{
   width:20%;
   padding:2%;
+  align-items: center;
   display:inline-block;
+  align-items:flex-end;
   }
   
-  
+  .links{
+    float: right;
+  }
+  .link{
+    padding-right: 20px;
+  }
   
   .footer img{
   width:200px;
@@ -277,7 +303,7 @@
   }
   
   .footer section a:hover{
-  color:#a49e59;
+  color: rgb(11, 81, 173);
   }
   
   .footer section input{
@@ -309,9 +335,9 @@
   }
   
   .sub-footer{
-  background:#1e1e1e;
+  /* background:#1e1e1e; */
   text-align:center;
   font-size:14px;
-  color:gray;
+  color:whitesmoke;
   padding:10px 0px;
   }

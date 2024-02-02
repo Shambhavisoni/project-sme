@@ -1,77 +1,140 @@
-
-.header{
-  height: 40px;
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+/*homecard*/
+.card-homecard{
+  background-color: white;
+  width:370px;
+  height:420px;
+  padding-left: 15px;
+  margin-bottom:20px;
+  margin-right: 15px;
+}
+.topic-homecard{
+  margin: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 0px;
+  font-size: xx-large;
+  font-weight: 900;
+}
+.img-homecard{
+  padding-top: 0px;
+  width:350px;
+  height:290px;
+}
+.scheme-homecard{
   display: flex;
-  justify-content: space-evenly;
+  height:20px;
 }
-a{
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 100px;
-}
-.header__search{
-  display: flex;
-  justify-content: space-evenly;
-  width: 650px;
-  height: 30px;
-  border: solid;
-  border-radius: 6px;
-}
-.search-input{
-  width: 610px;
-  font-size: 1rem;
-  border: white;
-}
-/*header
-.header{
-  position: sticky;
-  top: 0;
-  justify-content: space-evenly;
-}
-.header__left{
-  display: flex;
-}
-.header__left > img{
-  background-size: contain;
-  object-fit: contain;
-  height: 40px;
-  width: 200px;
-  margin-right: 20px;
-}
-.header__search{
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  height: 22px;
-  color: gray;
-  /* background-color: #eef3f8; */
-  /*
-}
-.header__right{
-  display: flex;
-  margin-left: 90px;
-}
-
-.headerOption{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 30px;
-  color: gray;
-  cursor: pointer;
-  justify-content: space-between;
-  margin-left: 30px;
-  width: 5em;
-}
-
-.headerOption:hover{
+.p-homecard{
+  margin:0px;
   color: black;
-  background-color: rgb(181, 239, 255);
-  border-radius: 10px;
+  height: 20px;
+  font-size: xx-large;
+  font-weight: 700;
 }
-
-.headerOption__title{
-  font-size: 15px;
-  font-weight: 600;
-}*/
+.sub-homecard{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  margin-top:10px;
+  font-size: 23px;
+  font-weight: 700;
+}
+.more-homecard{
+  color: rgb(45,152,152);
+  font-size: 23px;
+  font-weight: 500;
+  margin-top:13px;
+}
+/* homepage*/
+.banner-homepage{
+  width:100%;
+  height: 350px;
+  background-image: url("D:\schemes\scheme\src\shared\components\head-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.slogan-homepage{
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  height:100px;
+  width: 700px;
+  justify-content: center;
+  margin: auto;
+  padding-top:90px;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+.head-homepage{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(242, 243, 243);
+  margin: 0px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.subhead-homepage{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  color: rgb(10, 13, 13);
+  background-color: rgb(65, 211, 211);
+  margin-left: 23px;
+  width: 8.3%;
+}
+.layout-homepage{
+  display:flex;
+  background-color: rgb(242, 243, 243);
+  padding-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Contact.jsx*/
+.header-contact{
+  background-color: rgb(45,152,152);
+  text-align: center;
+  width: 1419px;
+  height: 80px;
+  padding: 50px;
+  font-size: larger;
+}
+.inquiries-contact{
+  padding: 30px;
+  padding-bottom: 20px;
+  font-size: medium;
+}
+.form-contact{
+  padding-left: 30px;
+}
+.form-contact p{
+  display: flex;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.form-contact input{
+  height: 25px;
+  width: 500px;
+  font-size: medium;
+}
+.form-contact textarea{
+  height: 200px;
+  width: 800px;
+  font-size: medium;
+  counter-increment: none;
+}
+.response-contact{
+  padding-left: 30px;
+}
+.button-contact{
+  background-color: rgb(45,152,152);
+  height: 40px;
+  width: 90px;
+  margin-top: 20px;
+  margin-left:30px;
+  font-size: 25px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}

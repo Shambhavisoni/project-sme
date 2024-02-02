@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <>
         <div className='header'>
-            <NavLink activeClassName={({isActive})=>isActive? "active_class":""} to="/">Home</NavLink>
+            <NavLink className={({isActive})=>isActive? "active_class":""} to="/">Home</NavLink>
             <div className="header__search"> 
                 <input type="text" placeholder="Search" className='search-input'/>
             </div>

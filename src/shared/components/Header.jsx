@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Homepage from '../../pages/Homepage';
-import About from '../pages/About';
+import About from '../../pages/About';
 import Contact from '../../pages/Contact';
 const Header = () => {
   return (

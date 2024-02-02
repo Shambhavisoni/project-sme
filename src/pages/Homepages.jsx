@@ -1,5 +1,5 @@
 import React from 'react'
-import Homecard from '../components/Homecard'
+import Homecard from '../shared/components/Homecard'
 import Sectorname from "../shared/api/Sectorname";
 const Homepage = () => {
   return (

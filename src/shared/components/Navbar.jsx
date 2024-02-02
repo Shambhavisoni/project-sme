@@ -1,19 +1,28 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from "./logo.jpg"
+import SearchIcon from '@mui/icons-material/Search';
+
 const Navbar = () => {
   return (
     <>
-        <div className='header'>
-            <NavLink className={({isActive})=>isActive? "active_class":""} to="/">Home</NavLink>
-            <div className="header__search"> 
-                <input type="text" placeholder="Search" className='search-input'/>
-            </div>
-            <NavLink className={({isActive})=>isActive ? "active_class":""} to="/about">About Us</NavLink>
-            <NavLink className={({isActive})=>isActive ? "active_class":""} to="/contact">Contact Us</NavLink>      
+      <div className='header'>
+        <div className="header__left">
+          <img src={logo} alt=""/>
+          <NavLink className="headerOption" activeClassName="active_class" to="/">Home</NavLink>
+          <NavLink className="headerOption" activeClassName="active_class" to="/about">About Us</NavLink>
+          <NavLink className="headerOption" activeClassName="active_class" to="/contact">Contact Us</NavLink>
+        <NavLink className="headerOption" activeClassName="active_class" to="/scheme">Scheme</NavLink>
         </div>
+      <div className="header__right">
+        <div className="header__search"> 
+          <SearchIcon />
+          <input type="text" placeholder="Search" className='search-input'/>
+        </div> 
+      </div>
+      </div>
     </>
-
-  )
+  );
 }
 
 export default Navbar

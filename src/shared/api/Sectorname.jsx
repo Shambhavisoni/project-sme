@@ -25,7 +25,7 @@ const Sectorname=[
     },
     {
         id:5,
-        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS72Zd4VqyO7i79LGAfhZwTrqBLOJC-_vAgn8dtb0L4SRDJq_l2uXzBrOeNZwjnwyp3SqE&usqp=CAU",
+        image:"https://blog-edutore-partner.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2021/06/03154215/Profesi-Finance_610-x-610-px.png",
         category:"Finance",
         schemes:345,
     },

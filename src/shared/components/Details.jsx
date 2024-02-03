@@ -6,8 +6,9 @@ const Details = [
       deadline:
         "4 days left",
       eligibilty: "for girl child",
-      content: "The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme.",
-      url:"#" 
+      content: "Education The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme.",
+      url:"#",
+      utube:"" 
     },
     {
       id: 2,
@@ -16,18 +17,18 @@ const Details = [
       deadline:
         "4 days left",
       eligibilty: "for girl child",
-      content: "The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme.The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." 
+      content: "Startup The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme.The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." 
       ,
       url:"#" 
     },
     {
       id: 3,
-      name:"International Affairs",
+      name:"Education",
       schemeName: "Mukhya Mantri Vivah Shagun Yojna",
       deadline:
         "4 days left",
       eligibilty: "for girl child",
-      content: "The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." ,
+      content: "International Affairs The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." ,
       url:"#" 
     },
     {
@@ -37,7 +38,7 @@ const Details = [
       deadline:
         "4 days left",
       eligibilty: "for girl child",
-      content: "The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." ,
+      content: "Women and Child The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." ,
       url:"#" 
     },
     {
@@ -47,7 +48,7 @@ const Details = [
       deadline:
         "4 days left",
       eligibilty: "for girl child",
-      content: "The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." ,
+      content: "Health and Wellness The Haryana government has prepared such a scheme for poor girls, and for welfare of SC's and BC's in which there will be no problem in the marriage of girls from poor families. This is a G2C service. Only on-line applications on https://saralharyana.gov.in/ are accepted under this scheme." ,
       url:"#" 
     },
   ];

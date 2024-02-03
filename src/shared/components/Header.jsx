@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Homepages from '../../pages/Homepages';
 import About from '../../shared/pages/About';
-import Contact from '../../shared/pages/Contact';
+import Contact from '../../pages/Contact';
 import Body from './Body';
 const Header = () => {
   return (

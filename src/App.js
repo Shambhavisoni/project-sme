@@ -1,9 +1,10 @@
 import Header from "./shared/components/Header"
 import "./App.css"; 
 import {BrowserRouter} from 'react-router-dom';
-import Body from "./shared/components/Body.jsx"
 import Footer from "./shared/components/Footer.jsx"
-import "./App.css"
+import Highligths from "./components/Highligths.jsx";
+import { Feedback } from "./components/Feedback.jsx";
+import Ngocard from "./components/Ngocard.jsx";
 // import Scheme from "./shared/pages/Scheme.jsx";
 
 function App() {
@@ -11,8 +12,10 @@ function App() {
     <>
       <BrowserRouter>
            <Header />
-            {/* <Body /> */}
            {/* <Footer /> */}
+           {/* <Highligths/>
+           <Ngocard/>
+           <Feedback/> */}
       </BrowserRouter>
     </>
   );

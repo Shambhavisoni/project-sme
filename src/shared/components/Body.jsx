@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from "./Card.jsx";
 import Details from "./Details.jsx";
-// import {ctage} from './Homecard.jsx';
+import { useLocation } from 'react-router-dom';
 function truncate(text, maxLength) {
   return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
 }
@@ -18,8 +18,10 @@ function truncate(text, maxLength) {
 //     );
 // }
 
-function Body({name2}) {
-  // console.log(ctage);
+function Body() {
+  const location = useLocation();
+  const name1 = location.state?.name1.name;
+  const filteredDetails = name1 ? Details.filter(detail => detail.name === name1) : Details;
   return (
     <div className="body">
       <div className='body-top'>
@@ -32,22 +34,16 @@ function Body({name2}) {
       </div>
       <div className="cards">
       {/* {Details.map(createCard)} */}
-      {
-        Details.map((Detail)=>{
-          console.log(name2);
-
-          if(name2===Detail.name){
-            return  (
-              <Card
-                key={Detail.id}
-                schemeName={Detail.schemeName}
-                deadline={Detail.deadline}
-                eligibilty={Detail.eligibilty}
-                content={truncate(Detail.content, 300)}
-              />
-            );
-          }   
-        })}
+        {filteredDetails.map((Detail)=>{
+          return (
+            <Card
+              key={Detail.id}
+              schemeName={Detail.schemeName}
+              deadline={Detail.deadline}
+              eligibilty={Detail.eligibilty}
+              content={truncate(Detail.content, 300)}
+            />
+          )})}  
       </div>
     </div>
   )

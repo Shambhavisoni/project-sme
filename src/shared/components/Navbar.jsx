@@ -10,9 +10,9 @@ const Navbar = () => {
         <div className="header__left">
           <img src={logo} alt=""/>
           <NavLink className="headerOption" activeClassName="active_class" to="/">Home</NavLink>
+          <NavLink className="headerOption" activeClassName="active_class" to="/scheme">Scheme</NavLink>
           <NavLink className="headerOption" activeClassName="active_class" to="/about">About Us</NavLink>
           <NavLink className="headerOption" activeClassName="active_class" to="/contact">Contact Us</NavLink>
-        <NavLink className="headerOption" activeClassName="active_class" to="/scheme">Scheme</NavLink>
         </div>
       <div className="header__right">
         <div className="header__search"> 

@@ -1,4 +1,5 @@
 import React from 'react'
+import Ngocard from '../components/Ngocard'
 
 const Contact = () => {
   return (
@@ -23,6 +24,7 @@ const Contact = () => {
       <p>*Less than 12hours, we will response to your question </p>     
       <button className='button-contact'>Submit</button>
     </form> 
+    <Ngocard/>
     </>
   )
 }

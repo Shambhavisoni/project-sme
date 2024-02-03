@@ -1,10 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom';
 const Homecard = ({key, name,scheme, img}) => {
-  const [bool,setbool]= useState(false);
   let navigate= useNavigate();
   const update = (name) => {
-    setbool(true);
     navigate('/scheme', { state: { name1: name } });
   }
   return (

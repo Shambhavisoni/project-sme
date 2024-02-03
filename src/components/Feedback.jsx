@@ -5,7 +5,7 @@ export const Feedback = () => {
     <>
         <div className='contain-feedback'>
             <h1>Feedback</h1>
-            <p>(Thank you for choosing "Schemes Made Easy", it is great pleasure to provide the best quality of Service. Please take a few moments to complete feedback form. Your honest feeback will help us to serve you better and enable us to work on improving our serivce standards.)</p>
+            <p>(Thank you for choosing "Schemes Made Easy", it is great pleasure to provide the best quality of Service. Please take a few moments to complete feedback form. Your honest feedback will help us to serve you better and enable us to work on improving our serivce standards.)</p>
             <form className='form-feedback'>
                 <label>Full Name</label>
                 <input type="text" required/>
